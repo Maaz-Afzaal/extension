@@ -1,4 +1,4 @@
-//when i click on my button
+// //when i click on my button
 document.getElementById('fillForm').addEventListener('click', function(){
     //grab the text filed value from my tool
     var intValue = document.getElementById('apivalue').value;
@@ -9,7 +9,8 @@ document.getElementById('fillForm').addEventListener('click', function(){
     }, function() {
         //run the script in the file injector.js
         chrome.tabs.executeScript({
-            file: 'injector.js'
+            file: 'storeValues.js'
         });
     });
   });
+
